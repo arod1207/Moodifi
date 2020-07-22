@@ -1,2 +1,3 @@
 # Moodifi
-A playlist based on your mood
+
+##  Moodifi is an application that selects music based on your current mood. 
