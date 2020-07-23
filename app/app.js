@@ -7,11 +7,16 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const moodsAPI = require("../routes/moodsAPI");
-app.use("/api", moodsAPI);
+// app.use(express.static("./public"));
 
-const activitesAPI = require("../routes/activitiesAPI");
-app.use("/api", activitesAPI);
+const happyAPI = require("../routes/happyAPI");
+app.use("/api", happyAPI);
+
+const sadAPI = require("../routes/sadAPI");
+app.use("/api", sadAPI);
+
+const angryAPI = require("../routes/angryAPI");
+app.use("/api", angryAPI);
 
 app.use("/", (req, res) => {
   res.send("hello people");
