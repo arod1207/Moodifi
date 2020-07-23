@@ -11,3 +11,4 @@ VALUES
     ("https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX76Wlfdnj7AP?si=7kBDwgZMS0av0yOUTCU5Qg", "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX8Uebhn9wzrS?si=NboLENckRkq2C-W9UTd2TQ", "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXb83YJL7gTWj?si=w4KhIqW3RR2e0g4i0XWQLQ", "https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX2MyUCsl25eb?si=Zqdhd8T8QNyiYugvL1B56w", current_date
 (), current_date
 ())
+
