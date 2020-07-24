@@ -19,8 +19,7 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-// app.set("views", path.join(__dirname, "views"))
-// console.log("blah", __dirname)
+
 app.use(express.static("public"));
 
 const router = require("./routes/playlistAPI");
