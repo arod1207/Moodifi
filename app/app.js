@@ -11,7 +11,7 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// app.use(express.static("./public"));
+app.use(express.static("public"));
 
 const happyAPI = require("../routes/happyAPI");
 app.use("/api", happyAPI);
@@ -23,7 +23,7 @@ const angryAPI = require("../routes/angryAPI");
 app.use("/api", angryAPI);
 
 app.use("/", (req, res) => {
-  res.send("hello people");
+  res.render("index");
 });
 
 db.sequelize.sync().then(() => {
