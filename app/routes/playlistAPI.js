@@ -11,6 +11,13 @@ router.get("/mood/angry/all", (req, res) => {
   });
 });
 
+// Update angry rating //
+router.put("/mood/angry/rating", (req, res) => {
+  db.angry.update({
+    RATING: req.body.rating
+  }).then((rating) => res.render(rating))
+});
+
 // Get all happy PL //
 router.get("/mood/happy/all", (req, res) => {
   db.happy.findAll().then((playlist) => {
