@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("../models");
+const db = require("./models");
 const app = express();
 var exphbs = require("express-handlebars");
 var path = require ('path');
@@ -15,13 +15,14 @@ app.set("view engine", "handlebars");
 // console.log("blah", __dirname)
 app.use(express.static("public"));
 
-const happyAPI = require("../routes/happyAPI");
+
+const happyAPI = require("./routes/happyAPI");
 app.use("/api", happyAPI);
 
-const sadAPI = require("../routes/sadAPI");
+const sadAPI = require("./routes/sadAPI");
 app.use("/api", sadAPI);
 
-const angryAPI = require("../routes/angryAPI");
+const angryAPI = require("./routes/angryAPI");
 app.use("/api", angryAPI);
 
 app.use("/", (req, res) => {
