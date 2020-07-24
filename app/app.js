@@ -4,7 +4,7 @@ const app = express();
 var exphbs = require("express-handlebars");
 var path = require ('path');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3060;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
