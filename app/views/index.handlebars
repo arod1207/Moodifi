@@ -26,7 +26,9 @@
 {{#each playlist}}
 
 <a href="{{LINK}}">LINK PLACEHOLDER</a>
-<h2>Rating: {{RATING}}</h2>
+<h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i>{{RATING}}<i class="fa fa-thumbs-down" id="decrement "aria-hidden="true"></i></h2>
 {{else}}
 <p>No Playlist available</p>
 {{/each}}
+
+
