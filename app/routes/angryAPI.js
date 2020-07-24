@@ -4,23 +4,12 @@ const db = require("../models");
 
 router.get("/angry/all", (req, res) => {
   db.angry.findAll().then((playlists) => {
-    let angryPL = {
-      angry: playlists
-    };
-    console.log(angryPL);
-    res.render("index", angryPL)
+    res.render('index', {
+      playlists
+    })
   });
-});
+})
 
 module.exports = router;
 
-
-// router.get("/", (req, res) => {
-//   burger.selectAll(function (data) {
-//       var burgerObject = {
-//           burgers: data
-//       };
-//       console.log(burgerObject);
-//       res.render("index", burgerObject);
-//   });
-// });
+ 

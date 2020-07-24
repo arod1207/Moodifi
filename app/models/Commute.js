@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
   var Commute = sequelize.define(
     "commute",
     {
-      COMMUTE: {
+      LINK: {
         type: DataTypes.STRING,
       },
       RATING: {
