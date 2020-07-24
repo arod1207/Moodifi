@@ -1,13 +1,15 @@
-    <h1>moodifi</h1>
-    <div class="box one">
-    </div>
-    <div class="box two"></div>
+<h1>moodifi</h1>
+<div class="box one">
+</div>
+<div class="box two"></div>
 
 
-{{#each playlists}}
-<h3>{{LINK}}</h3>
-<h4>{{RATING}}</h4>
 
+
+{{#each playlist}}
+
+<a href="{{LINK}}">LINK PLACEHOLDER</a>
+<h2>Rating: {{RATING}}</h2>
 {{else}}
 <p>No Playlist available</p>
 {{/each}}
