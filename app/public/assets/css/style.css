@@ -13,20 +13,6 @@
      color: rgb(190, 190, 190);
  }
  
- .box{
-     width:300px;
-     height:200px;
- }
- 
- .one{
-     background:rgb(59, 59, 59);
-     position: relative;
-     margin-left: 25%;
- }
- 
- .two{
-     background:rgb(99, 52, 52);
-     position: relative;
-     margin-left: 50%;
-     margin-top: -200px;
+ a.custom-card, a.custom-card:hover {
+   color: inherit;
  }

@@ -7,7 +7,7 @@ const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3060;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -19,7 +19,8 @@ app.engine(
   })
 );
 app.set("view engine", "handlebars");
-
+// app.set("views", path.join(__dirname, "views"))
+// console.log("blah", __dirname)
 app.use(express.static("public"));
 
 const router = require("./routes/playlistAPI");
