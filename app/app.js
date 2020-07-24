@@ -11,11 +11,7 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-<<<<<<< HEAD
-app.use(express.static("./public"));
-=======
 app.use(express.static("public"));
->>>>>>> f0ca838ba935db53264a55baac8c58c3db0c5642
 
 const happyAPI = require("../routes/happyAPI");
 app.use("/api", happyAPI);
