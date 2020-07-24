@@ -11,6 +11,7 @@
      text-align: center;
      font-size: 120px;
      color: rgb(190, 190, 190);
+     padding-top: 6rem;
  }
  
  a.custom-card, a.custom-card:hover {
@@ -19,6 +20,7 @@
    margin: 0 auto; 
    float: none;
    margin-bottom: 10px; 
+   padding-top: 2rem;
  }
 
  .fa-smile-o {
