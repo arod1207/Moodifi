@@ -5,7 +5,6 @@ VALUES
 , current_date
 ());
 
-
 INSERT INTO angry
     (ANGRY, RATING, createdAt, updatedAt)
 VALUES
@@ -19,4 +18,3 @@ VALUES
     ('https://open.spotify.com/user/spotify/playlist/37i9dQZF1DXdPec7aLTmlC?si=8ySScaJrR1GJkAF9ZNgAaw', 0, current_date
 (), current_date
 ());
-    
