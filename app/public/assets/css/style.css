@@ -9,8 +9,9 @@
  
  h1 {
      text-align: center;
-     font-size: 120px;
-     color: rgb(190, 190, 190);
+     font-size: 175px;
+     color: rgba(190, 190, 190, 0.753);
+     padding-top: 6rem;
  }
  
  a.custom-card, a.custom-card:hover {
@@ -19,15 +20,21 @@
    margin: 0 auto; 
    float: none;
    margin-bottom: 10px; 
+   padding-top: 2rem;
  }
 
  .fa-smile-o {
      padding-top: 2rem;
-     font-size: 100px;
- }
+     font-size: 150px;
+}
 
 
  .fa-angle-double-up {
     padding-top: 2rem;
-    font-size: 100px;
+    font-size: 150px;
+    color: coral;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 4s;
+  }
