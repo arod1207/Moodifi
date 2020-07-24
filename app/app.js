@@ -8,6 +8,9 @@ const PORT = process.env.PORT || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
+
 app.use(express.static("./public"));
 
 const happyAPI = require("../routes/happyAPI");
@@ -20,7 +23,7 @@ const angryAPI = require("../routes/angryAPI");
 app.use("/api", angryAPI);
 
 app.use("/", (req, res) => {
-  res.send("hello people");
+  res.render("index");
 });
 
 db.sequelize.sync().then(() => {
