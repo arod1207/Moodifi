@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
   var Sad = sequelize.define(
     "sad",
     {
-      SAD: {
+      LINK: {
         type: DataTypes.STRING,
       },
       RATING: {

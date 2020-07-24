@@ -1,4 +1,3 @@
-
     <div class="container">
       <h1>moodifi</h1>
       <a href="https://github.com/arod1207/Moodifi" class="custom-card">
@@ -11,4 +10,11 @@
         </div>
       </div>
       </a>
-    </div>
+
+{{#each playlist}}
+
+<a href="{{LINK}}">LINK PLACEHOLDER</a>
+<h2>Rating: {{RATING}}</h2>
+{{else}}
+<p>No Playlist available</p>
+{{/each}}

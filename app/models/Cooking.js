@@ -3,7 +3,7 @@ module.exports = function (sequelize, DataTypes) {
   var Cooking = sequelize.define(
     "cooking",
     {
-      COOKING: {
+      LINK: {
         type: DataTypes.STRING,
       },
       RATING: {
