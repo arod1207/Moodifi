@@ -3,10 +3,11 @@ const router = express.Router();
 const db = require("../models");
 
 
-// Get all angry PL //
-router.get("/mood/playlist/:name", (req, res) => {
+// GET LINKS AND RATINGS //
+router.get("/playlist/:category/:name", (req, res) => {
   db.playlist.findOne({
     where: {
+      CATEGORY: req.params.category,
       NAME: req.params.name
     }
   }).then((playlist) => {

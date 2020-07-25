@@ -3,8 +3,8 @@ $(document).ready(function(){
 
   $('#increment').click(function() {
     $.ajax({
-      type: "PUT",
-      url: "/mood/angry/rating",
+      method: "PUT",
+      url: `/playlist/${category}/${name}`
     }).done(function( msg ) {
       alert( "Data Saved: " + msg );
     });
@@ -12,6 +12,8 @@ $(document).ready(function(){
 
 
 
+
+      
 
 
 
