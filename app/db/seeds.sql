@@ -21,9 +21,9 @@ VALUES
 ());
 
 INSERT INTO playlist
-    (NAME, LINK, CATEGORY, RATING, createdAt, updatedAt)
+    (NAME, LINK, CATEGORY, RATING, IMAGE, createdAt, updatedAt)
 VALUES
-    ('Workout','https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX76Wlfdnj7AP?si=7kBDwgZMS0av0yOUTCU5Qg','Activities', 0, current_date()
+    ('Workout','https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX76Wlfdnj7AP?si=7kBDwgZMS0av0yOUTCU5Qg','Activities', 0, 'https://drive.google.com/file/d/1uDEOddZcMJ7_dsPCR9QYTAxychMhLZen/view?usp=sharing', current_date()
 , current_date
 ());
 
@@ -47,3 +47,4 @@ VALUES
     ('Studying','https://open.spotify.com/user/spotify/playlist/37i9dQZF1DX8Uebhn9wzrS?si=NboLENckRkq2C-W9UTd2TQ','Activities', 0, current_date()
 , current_date
 ());
+
