@@ -46,3 +46,15 @@
 .show {
     display: block;
 }
+
+.card {
+    cursor: grab;
+}
+
+.card-text {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
