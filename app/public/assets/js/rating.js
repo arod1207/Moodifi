@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  function playlistStart(event) {
+  $("#homeScreen").addClass('hide');
+  $("#homeScreen").removeClass('show');
+  };
+  $("#moodsBtn").on("click", playlistStart);
+  $("#activeBtn").on("click", playlistStart);
+
+
+
+
 
 
   $('#increment').click(function() {
@@ -9,21 +19,6 @@ $(document).ready(function(){
       alert( "Data Saved: " + msg );
     });
   });
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
 
 
 

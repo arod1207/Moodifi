@@ -38,3 +38,11 @@
 .animate__animated.animate__fadeIn {
     --animate-duration: 4s;
   }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
