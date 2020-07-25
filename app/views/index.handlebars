@@ -1,7 +1,7 @@
 <div class="container">
-  <div class="show" id="homeScreen">
-  <h1>moodifi</h1>
-  <div class="row">
+  <div class="hide" id="homeScreen">
+    <h1>moodifi</h1>
+    <div class="row">
       <div class="card text-white bg-dark mb-3" style="width: 20rem; height:18rem;" id="moodsBtn">
         <div class="card-body">
           <p class="card-text">
@@ -18,19 +18,17 @@
         </div>
         <h5 class="card-title">ACTIVITIES</h5>
       </div>
+    </div>
   </div>
-  </div>
+<div class="active show">
+<p>{{playlist.NAME}}</p>
+<p>
+  <a href="{{playlist.LINK}}">
+    <img src="{{playlist.IMAGE}}">
+  </a>
+   
+</p>
+<h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
 </div>
 
-
-
-
-
-<p>{{playlist.NAME}}</p>
-<p><a href="{{playlist.LINK}}">PLACEHOLDER</a></p>
-<h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
-
-
-
-
-
+</div>
