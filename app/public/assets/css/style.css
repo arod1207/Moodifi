@@ -14,23 +14,24 @@
      padding-top: 6rem;
  }
  
- a.custom-card, a.custom-card:hover {
+ .card, .card:hover {
    color: inherit;
    text-align: center;
    margin: 0 auto; 
    float: none;
    margin-bottom: 10px; 
    padding-top: 2rem;
+   margin-left: 8rem;
+
+   cursor: grab;
  }
 
  .fa-smile-o {
-     padding-top: 2rem;
      font-size: 150px;
 }
 
 
  .fa-angle-double-up {
-    padding-top: 2rem;
     font-size: 150px;
     color: coral;
 }
@@ -47,14 +48,3 @@
     display: block;
 }
 
-.card {
-    cursor: grab;
-}
-
-.card-text {
-    text-align: center;
-}
-
-h5 {
-    text-align: center;
-}
