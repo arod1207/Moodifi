@@ -1,6 +1,9 @@
 <div class="container">
-  <div class="hide" id="homeScreen">
+  <div class="show" id="homeScreen">
     <h1>moodifi</h1>
+    <p id="about">
+      Curated playlists for whatever you do, or your mood.
+    </p>
     <div class="row">
       <div class="card text-white bg-dark mb-3" style="width: 20rem; height:18rem;" id="moodsBtn">
         <div class="card-body">
@@ -20,15 +23,14 @@
       </div>
     </div>
   </div>
-<div class="active show">
-<p>{{playlist.NAME}}</p>
-<p>
-  <a href="{{playlist.LINK}}">
-    <img src="{{playlist.IMAGE}}">
-  </a>
-   
-</p>
-<h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
-</div>
+  <div class="active show">
+    <p>{{playlist.NAME}}</p>
+    <p>
+      <a href="{{playlist.LINK}}">
+        <img src="{{playlist.IMAGE}}">
+      </a>
+    </p>
+    <h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
+  </div>
 
 </div>

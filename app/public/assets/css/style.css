@@ -14,6 +14,11 @@
      padding-top: 6rem;
  }
  
+#about {
+    text-align: center;
+    font-size: 1rem;
+}
+
  .card, .card:hover {
    color: inherit;
    text-align: center;
@@ -25,6 +30,11 @@
 
    cursor: grab;
  }
+
+.card:hover {
+    border: 3px solid #ff7a59;
+}
+
 
  .fa-smile-o {
      font-size: 150px;
