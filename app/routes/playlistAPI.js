@@ -27,7 +27,7 @@ router.get("/playlist/moods/all", (req, res) => {
     }
   }).then((playlist) => {
     console.log(playlist)
-    res.render("index", {
+    res.render("moods", {
       playlist
     });
   })
@@ -41,7 +41,7 @@ router.get("/playlist/activities/all", (req, res) => {
     }
   }).then((playlist) => {
     console.log(playlist)
-    res.render("index", {
+    res.render("active", {
       playlist
     });
   })

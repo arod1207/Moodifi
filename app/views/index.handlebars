@@ -5,70 +5,28 @@
       Curated playlists for whatever you do, or your mood.
     </p>
     <div class="row">
+      <!-- moods card -->
       <a href="/playlist/moods/all">
-      <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
-        id="moodsBtn">
-        <div class="card-body">
-          <p class="card-text">
-            <i class="fa fa-smile-o"></i>
-          </p>
+        <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;" id="moodsBtn">
+          <div class="card-body">
+            <p class="card-text">
+              <i class="fa fa-smile-o"></i>
+            </p>
+          </div>
+          <h5 class="card-title">MOODS</h5>
         </div>
-        <h5 class="card-title">MOODS</h5>
-      </div>
       </a>
-        <a href="/playlist/activities/all">
-      <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
-        id="activeBtn">
-        <div class="card-body">
-          <p class="card-text">
-            <i class="fa fa-angle-double-up"></i>
-          </p>
+      <!-- activities card -->
+      <a href="/playlist/activities/all">
+        <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;" id="activeBtn">
+          <div class="card-body">
+            <p class="card-text">
+              <i class="fa fa-angle-double-up"></i>
+            </p>
+          </div>
+          <h5 class="card-title">ACTIVITIES</h5>
         </div>
-        <h5 class="card-title">ACTIVITIES</h5>
-      </div>
       </a>
     </div>
   </div>
-
-  <div class="moods show">
-    <div class="row">
-      <ul id="moods-list">
-          {{#each playlist}}
-        <li>
-      <a href="{{this.LINK}}">
-        <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
-          id="moodsCards">
-             <div class="card-body">
-          <img src="{{this.IMAGE}}">
-              </div>
-        <h5 class="card-title">{{this.NAME}}</h5>
-        </a>  
-        </li>
-        {{/each}}
-      </ul>
-    </a>
-    </div>
-    </div>
-    
-
-    <div class="active show">
- <div class="row">
-      <ul id="activities-list">
-          {{#unless playlist}}
-        <li>
-      <a href="{{this.LINK}}">
-        <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
-          id="moodsCards">
-             <div class="card-body">
-          <img src="{{this.IMAGE}}">
-              </div>
-        <h5 class="card-title">{{this.NAME}}</h5>
-        </a>  
-        </li>
-        {{/unless}}
-      </ul>
-    </a>
-    </div>
-    </div>
-
-  </div>
+</div>

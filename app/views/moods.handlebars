@@ -1,0 +1,16 @@
+  <!-- moods playlist screen -->
+  <div class="show" id="moods">
+    <div class="row">
+      <ul id="moods-list">
+        {{#each playlist}}
+        <li>
+          <a href="{{this.LINK}}">
+                <img src="{{this.IMAGE}}">
+          </a>
+          <h5 class="licard-title">{{this.NAME}}</h5>
+        </li>
+        {{/each}}
+      </ul>
+      </a>
+    </div>
+  </div>
