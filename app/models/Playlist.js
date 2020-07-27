@@ -10,7 +10,7 @@ module.exports = function (sequelize, DataTypes) {
         type: DataTypes.STRING,
       },
       CATEGORY: {
-        type: DataTypes.STRING,
+        type: DataTypes.BOOLEAN,
       },
       RATING: {
         type: DataTypes.INTEGER,
