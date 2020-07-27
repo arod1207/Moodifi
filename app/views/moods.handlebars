@@ -1,20 +1,29 @@
-  <!-- moods playlist screen -->
-  <div class="show" id="moods">
-    <div class="row">
-      <ul id="moods-list">
-        {{#each playlist}}
-        <li>
-          <a href="{{this.LINK}}">
-                <img src="{{this.IMAGE}}">
-          </a>
-          <h5 class="licard-title">{{this.NAME}}</h5>
-          <form action="/playlist/moods/{{this.id}}" method="POST">
-                            <input type="hidden" name="rating">
-                            <button class="btn btn-danger" type="submit">Eat Me! {{this.RATING}}</button>
-                        </form>
-        </li>
-        {{/each}}
-      </ul>
-      </a>
-    </div>
+<!-- moods playlist screen -->
+<div class="show" id="moods">
+  <div class="row">
+    <ul id="moods-list">
+      {{#each playlist}}
+      <li>
+        <a href="{{this.LINK}}">
+          <img src="{{this.IMAGE}}">
+        </a>
+        <h5 class="licard-title">{{this.NAME}}</h5>
+        <form action="/playlist/moods/like/{{this.id}}" method="POST">
+          <input type="hidden" name="rating">
+          <button class="btn" type="submit">
+            <h2><i class="fa fa-thumbs-up"> {{this.LIKED}}</i></h2>
+          </button>
+        </form>
+
+        <form action="/playlist/moods/dislike/{{this.id}}" method="POST">
+          <input type="hidden" name="rating">
+          <button class="btn" type="submit">
+            <h2><i class="fa fa-thumbs-down"> {{this.DISLIKED}}</i></h2>
+          </button>
+        </form>
+      </li>
+      {{/each}}
+    </ul>
+    </a>
   </div>
+</div>
