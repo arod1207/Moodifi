@@ -32,6 +32,19 @@ router.get("/playlist/moods/all", (req, res) => {
   })
 });
 
+router.get("/playlist/activities/all", (req, res) => {
+  db.playlist.findAll({
+    where: {
+      CATEGORY: "Activities"
+    }
+  }).then((playlist) => {
+    console.log(playlist)
+    res.render("index", {
+      playlist
+    });
+  })
+});
+
 router.post("/playlist/:category/:name", (req, res) => {
   db.playlist.update(
     {RATING: rating++},
