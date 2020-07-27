@@ -50,6 +50,22 @@ router.get("/playlist/moods/happy", (req, res) => {
     });
 });
 
+router.get("/playlist/moods/angry", (req, res) => {
+  db.playlist
+    .findAll({
+      raw: true,
+      where: {
+        NAME: "Angry",
+      },
+    })
+    .then((playlist) => {
+      console.log(playlist);
+      res.render("moods", {
+        playlist,
+      });
+    });
+});
+
 router.get("/playlist/activities/all", (req, res) => {
   db.playlist
     .findAll({
