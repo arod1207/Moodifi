@@ -21,8 +21,9 @@ var rating;
 
 router.get("/playlist/moods/all", (req, res) => {
   db.playlist.findAll({
+    raw: true,
     where: {
-      CATEGORY: "Moods"
+      CATEGORY: "Mood"
     }
   }).then((playlist) => {
     console.log(playlist)
@@ -34,6 +35,7 @@ router.get("/playlist/moods/all", (req, res) => {
 
 router.get("/playlist/activities/all", (req, res) => {
   db.playlist.findAll({
+    raw: true,
     where: {
       CATEGORY: "Activities"
     }
