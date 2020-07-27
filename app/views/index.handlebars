@@ -30,23 +30,22 @@
     <div class="row">
       <ul id="moods-list">
         {{#each playlist}}
-        {{#if this.CATEGORY}}
+        {{#unless this.CATEGORY}}
         <li>
-          {{this.playlist.NAME}}
+          {{this.NAME}}
         </li>
-        {{/if}} {{/each}}
+        {{/unless}} {{/each}}
       </ul>
       <p>hello</p>
     </div>
 
-    <div class="active hide">
+    <div class="active show">
       <p>{{playlist.NAME}}</p>
       <p>
         <a href="{{playlist.LINK}}">
           <img src="{{playlist.IMAGE}}">
         </a>
       </p>
-      <p>hello</p>
       <h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
     </div>
 
