@@ -29,18 +29,26 @@
   <div class="moods show">
     <div class="row">
       <ul id="moods-list">
+        <a href="/playlist/moods/sad">
         {{#each playlist}}
-        {{#if this.CATEGORY}}
+        {{this.CATEGORY}}
         <li>
-          {{this.playlist.NAME}}
-        </li>
-        {{/if}} {{/each}}
-      </ul>
-      <p>hello</p>
-    </div>
+          {{this.NAME}}
+          {{this.LINK}}
+          {{this.IMAGE}}
 
-    <div class="active hide">
-      <p>{{playlist.NAME}}</p>
+
+          
+        </li>
+        {{/each}}
+      </ul>
+    </a>
+    </div>
+    </div>
+    
+
+    <div class="active show">
+      <p>{{this.NAME}}</p>
       <p>
         <a href="{{playlist.LINK}}">
           <img src="{{playlist.IMAGE}}">
