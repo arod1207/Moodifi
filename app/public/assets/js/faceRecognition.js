@@ -34,5 +34,7 @@ $(".submitBtn").on("click", function (e) {
     } else {
       window.location = "/playlist/moods/happy";
     }
+    
   });
+  document.getElementById("url").value = '';
 });
