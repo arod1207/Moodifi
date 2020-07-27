@@ -7,10 +7,6 @@ $(document).ready(function(){
   $("#activeBtn").on("click", playlistStart);
 
 
-
-
-
-
   $('#increment').click(function() {
     $.ajax({
       method: "PUT",
@@ -19,7 +15,5 @@ $(document).ready(function(){
       alert( "Data Saved: " + msg );
     });
   });
-
-
 
 });

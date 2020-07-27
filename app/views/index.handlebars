@@ -5,7 +5,8 @@
       Curated playlists for whatever you do, or your mood.
     </p>
     <div class="row">
-      <div class="card text-white bg-dark mb-3" style="width: 20rem; height:18rem;" id="moodsBtn">
+      <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
+        id="moodsBtn">
         <div class="card-body">
           <p class="card-text">
             <i class="fa fa-smile-o"></i>
@@ -13,7 +14,8 @@
         </div>
         <h5 class="card-title">MOODS</h5>
       </div>
-      <div class="card text-white bg-dark mb-3" style="width: 20rem; height:18rem;" id="activeBtn">
+      <div class="card text-white bg-dark mb-3 animate__animated animate__fadeIn" style="width: 20rem; height:18rem;"
+        id="activeBtn">
         <div class="card-body">
           <p class="card-text">
             <i class="fa fa-angle-double-up"></i>
@@ -23,14 +25,21 @@
       </div>
     </div>
   </div>
-  <div class="active show">
-    <p>{{playlist.NAME}}</p>
-    <p>
-      <a href="{{playlist.LINK}}">
-        <img src="{{playlist.IMAGE}}">
-      </a>
-    </p>
-    <h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
-  </div>
 
-</div>
+  <div class="moods show">
+    <div class="row">
+      <p>hello</p>
+    </div>
+
+    <div class="active hide">
+      <p>{{playlist.NAME}}</p>
+      <p>
+        <a href="{{playlist.LINK}}">
+          <img src="{{playlist.IMAGE}}">
+        </a>
+      </p>
+      <p>hello</p>
+      <h2><i class="fa fa-thumbs-up" id="increment" aria-hidden="true"></i> {{playlist.RATING}}</i></h2>
+    </div>
+
+  </div>
