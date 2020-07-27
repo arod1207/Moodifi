@@ -1,0 +1,17 @@
+  <!-- activities playlist screen -->
+  <div class="show" id="active">
+    <div class="row">
+      <ul id="activities-list">
+        {{#each playlist}}
+        <li>
+          <a href="{{this.LINK}}">
+              <img src="{{this.IMAGE}}">
+          </a>
+          <h5 class="licard-title">{{this.NAME}}</h5>
+
+        </li>
+        {{/each}}
+      </ul>
+      </a>
+    </div>
+  </div>
