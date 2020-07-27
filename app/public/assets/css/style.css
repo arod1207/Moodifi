@@ -9,11 +9,16 @@
  
  h1 {
      text-align: center;
-     font-size: 175px;
+     font-size: 11rem;
      color: rgba(190, 190, 190, 0.753);
      padding-top: 6rem;
  }
  
+#about {
+    text-align: center;
+    font-size: 1rem;
+}
+
  .card, .card:hover {
    color: inherit;
    text-align: center;
@@ -25,6 +30,11 @@
 
    cursor: grab;
  }
+
+.card:hover {
+    border: 3px solid #ff7a59;
+}
+
 
  .fa-smile-o {
      font-size: 150px;
