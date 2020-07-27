@@ -1,16 +1,16 @@
 $(document).ready(function(){
-  let pathUrl = window.location.pathname
 
-  console.log(rating)
-  $('#increment').click(function() {
-    $.ajax({
-      method: "POST",
-      url: pathUrl,   
-    }).done(function( msg ) {
-      alert( "Data Saved: " + msg );
-    });
+  // $("#increment").click(function (e) {
+  //   $.ajax({
+  //     url: '/playlist/:id',
+  //     success: function(data) {
+  //       if (data == "refresh"){
+  //         window.location.reload(); // This is not jQuery but simple plain ol' JS
+  //       }
+  //     }
+  //   });
+  // });
   });
 
 
 
-}); 

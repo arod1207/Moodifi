@@ -23,7 +23,7 @@ router.get("/playlist/moods/all", (req, res) => {
   db.playlist.findAll({
     raw: true,
     where: {
-      CATEGORY: "Mood"
+      CATEGORY: "Moods"
     }
   }).then((playlist) => {
     console.log(playlist)
@@ -47,17 +47,24 @@ router.get("/playlist/activities/all", (req, res) => {
   })
 });
 
-router.post("/playlist/:category/:name", (req, res) => {
-  db.playlist.update(
-    {RATING: rating++},
-    {where: {
-      CATEGORY: req.params.category,
-      NAME: req.params.name
-    }}
-  ).then((playlist) => {
-    res.render('index', {
-      playlist
+router.post("/playlist/activities/:id", (req, res) => {
+  db.playlist
+    .increment("Rating", {
+      where: { id: req.params.id },
     })
-  })
-});
+    .then((playlist) => {
+      res.redirect('/playlist/activities/all')
+      });
+    });
+
+router.post("/playlist/moods/:id", (req, res) => {
+      db.playlist
+        .increment("Rating", {
+          where: { id: req.params.id },
+        })
+        .then((playlist) => {
+          res.redirect('/playlist/moods/all')
+          });
+        });
+
 module.exports = router;

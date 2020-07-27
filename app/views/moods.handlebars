@@ -8,6 +8,10 @@
                 <img src="{{this.IMAGE}}">
           </a>
           <h5 class="licard-title">{{this.NAME}}</h5>
+          <form action="/playlist/moods/{{this.id}}" method="POST">
+                            <input type="hidden" name="rating">
+                            <button class="btn btn-danger" type="submit">Eat Me! {{this.RATING}}</button>
+                        </form>
         </li>
         {{/each}}
       </ul>
