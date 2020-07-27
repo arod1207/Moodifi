@@ -28,6 +28,14 @@
 
   <div class="moods show">
     <div class="row">
+      <ul id="moods-list">
+        {{#each playlist}}
+        {{#if this.CATEGORY}}
+        <li>
+          {{this.playlist.NAME}}
+        </li>
+        {{/if}} {{/each}}
+      </ul>
       <p>hello</p>
     </div>
 
