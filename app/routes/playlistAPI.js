@@ -18,6 +18,38 @@ router.get("/playlist/moods/all", (req, res) => {
     });
 });
 
+router.get("/playlist/moods/sad", (req, res) => {
+  db.playlist
+    .findAll({
+      raw: true,
+      where: {
+        NAME: "Sad",
+      },
+    })
+    .then((playlist) => {
+      console.log(playlist);
+      res.render("moods", {
+        playlist,
+      });
+    });
+});
+
+router.get("/playlist/moods/happy", (req, res) => {
+  db.playlist
+    .findAll({
+      raw: true,
+      where: {
+        NAME: "Happy",
+      },
+    })
+    .then((playlist) => {
+      console.log(playlist);
+      res.render("moods", {
+        playlist,
+      });
+    });
+});
+
 router.get("/playlist/activities/all", (req, res) => {
   db.playlist
     .findAll({
