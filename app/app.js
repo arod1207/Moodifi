@@ -21,7 +21,7 @@ app.use(flash())
 require('dotenv').config();
 console.log(process.env)
 
-app.use(session({ secret: process.env.SESSION_SECRET, resave: true, saveUninitialized: true }));
+app.use(session({ secret: process.env.SUPER_SECRET, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride('_method'));
