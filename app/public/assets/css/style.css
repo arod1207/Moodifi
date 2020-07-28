@@ -35,14 +35,14 @@
     font-size: 1rem;
 }
 
- .card, .card:hover {
+ .card {
    color: inherit;
    text-align: center;
    margin: 0 auto; 
    float: none;
    margin-bottom: 10px; 
    padding-top: 2rem;
-   margin-left: 8rem;
+   margin-left: 10rem;
 
    cursor: grab;
  }
@@ -97,4 +97,8 @@ li {
     padding-bottom: 2rem;
     text-align: center;
     color: rgba(190, 190, 190, 0.753);
+}
+
+.rateBtn {
+    display: inline-block;
 }
