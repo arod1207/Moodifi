@@ -29,8 +29,9 @@ app.set("view engine", "handlebars");
 
 app.use(express.static("public"));
 
-const router = require("./routes/playlistAPI");
-app.use(router);
+require("./routes/playlistAPI")(app);
+require("./routes/htmlRoutes")(app);
+
 
 app.use("/", (req, res) => {
   res.render("index");
