@@ -1,5 +1,6 @@
 const passport = require("../config/passport");
 const db = require("../models");
+const bcrypt = require("bcryptjs");
 
 module.exports = function (app) {
   // app.post(
@@ -12,16 +13,14 @@ module.exports = function (app) {
   // );
 
     
-  app.post("/signup", (req, res) => {
+  app.post("/signup", async (req,res) => {
+    const hashedPassword =  await bcrypt.hash(req.body.password, 10)
     db.User.create({
       USERNAME: req.body.username,
-      PASSWORD: req.body.password
+      PASSWORD: hashedPassword
+    }).then((data) => {
+      console.log(data);
+      res.render('login')
     })
-      .then(function() {
-        res.redirect(307, "/login");
-      })
-      .catch(function(err) {
-        res.status(401).json(err);
-      });
-  });
+  })
 };
