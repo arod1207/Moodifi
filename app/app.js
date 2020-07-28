@@ -11,13 +11,17 @@ const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
 
+
 const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(flash())
 
-app.use(session({ secret: "Air condition", resave: true, saveUninitialized: true }));
+require('dotenv').config();
+console.log(process.env)
+
+app.use(session({ secret: process.env.SESSION_SECRET, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride('_method'));
