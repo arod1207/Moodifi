@@ -12,7 +12,7 @@ $(".submitBtn").on("click", function (e) {
     method: "POST",
     headers: {
       "x-rapidapi-host": "faceplusplus-faceplusplus.p.rapidapi.com",
-      "x-rapidapi-key": process.env.x-rapidapi-key,
+      "x-rapidapi-key": "0b8bdf6765msh3a834de431554e9p1feb19jsn74c4481a7c10",
       "content-type": "application/x-www-form-urlencoded",
     },
     data: {},
