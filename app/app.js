@@ -31,10 +31,11 @@ app.use(express.static("public"));
 
 require("./routes/playlistAPI")(app);
 require("./routes/htmlRoutes")(app);
+require("./routes/passportAPI")(app)
 
 
 app.use("/", (req, res) => {
-  res.render("index");
+  res.render("login");
 });
 
 db.sequelize.sync().then(() => {

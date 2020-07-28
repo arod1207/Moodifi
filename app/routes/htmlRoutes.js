@@ -13,7 +13,10 @@ app.get("/login", function(req, res) {
   if (req.user) {
     res.render("index");
   }
-  res.sendFile(path.join(__dirname, "../public/login.html"));
+});
+
+app.get("/signup", (req, res) => {
+  res.render("signup")
 });
 
 
