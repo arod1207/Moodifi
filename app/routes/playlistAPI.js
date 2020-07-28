@@ -1,7 +1,5 @@
-const express = require("express");
-// const router = express.Router();
 const db = require("../models");
-var passport = require("../config/passport");
+
 
 module.exports = function(app) {
 app.get("/playlist/moods/all", (req, res) => {
