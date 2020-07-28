@@ -9,6 +9,7 @@
  
  h1 {
      text-align: center;
+     text-align: 50vw;
      font-size: 11rem;
      color: rgba(190, 190, 190, 0.753);
      padding-top: 6rem;
@@ -25,7 +26,7 @@
       
       100% {
         
-        color: #ff7a59;
+        color: coral;
     }
     }
  
@@ -43,12 +44,12 @@
    margin-bottom: 10px; 
    padding-top: 2rem;
    margin-left: 10rem;
-
    cursor: grab;
  }
 
  .card:hover {
     border: 3px solid #ff7a59;
+    color: inherit;
 }
 
 
@@ -79,6 +80,9 @@ img {
     height:18rem;
     align-content: center;
     }
+img:hover {
+    opacity: 0.5;
+}
 
 li {
     display: inline-block;
@@ -91,7 +95,8 @@ li {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    color: rgba(190, 190, 190, 0.753);
+    color: rgba(122, 122, 122, 0.753);
+  
 }
 
 .rateBtn {
@@ -102,3 +107,10 @@ li {
     margin-bottom: 3rem;;
 }
 
+.fa-thumbs-o-down {
+    font-size: 20px;
+}
+
+.fa-thumbs-o-up {
+    font-size: 20px;
+}

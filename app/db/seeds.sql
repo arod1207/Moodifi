@@ -95,3 +95,17 @@ VALUES
     ('Dance','https://open.spotify.com/playlist/37i9dQZF1DWZQaaqNMbbXa?si=IWqYG7GqRpm7_8iHc4Hk7g','Activities', 0,0, 'https://i.scdn.co/image/ab67706f00000003781ac43d0cb6f4b9022f8044', current_date()
 , current_date
 ());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Cleaning','https://open.spotify.com/playlist/37i9dQZF1DX40AQSQVhD0g?si=ckYBvhxhQRyZf1jjqLiOXQ','Activities', 0,0, 'https://i.scdn.co/image/ab67706f0000000381425bcf25765aeae34bf023', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Gaming','https://open.spotify.com/playlist/37i9dQZF1DX0hvSv9Rf41p?si=k1ymVMubSuSTiRmtYXAHIQ','Activities', 0,0, 'https://i.scdn.co/image/ab67706f0000000332bfab24ffd174ce2cb7ddab', current_date()
+, current_date
+());

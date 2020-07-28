@@ -12,14 +12,14 @@
                 <form action="/playlist/moods/like/{{this.id}}" class="rateBtn" method="POST">
                     <input type="hidden" name="rating">
                     <button class="btn" type="submit">
-                        <h2><i class="fa fa-thumbs-up"> {{this.LIKED}}</i></h2>
+                        <h2><i class="fa fa-thumbs-o-up"> {{this.LIKED}}</i></h2>
                     </button>
                 </form>
                 <!-- dislike button -->
                 <form action="/playlist/moods/dislike/{{this.id}}" class="rateBtn" method="POST">
                     <input type="hidden" name="rating">
                     <button class="btn" type="submit">
-                        <h2><i class="fa fa-thumbs-down"> {{this.DISLIKED}}</i></h2>
+                        <h2><i class="fa fa-thumbs-o-down"> {{this.DISLIKED}}</i></h2>
                     </button>
                 </form>
             </li>
