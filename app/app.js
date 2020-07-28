@@ -1,5 +1,7 @@
 const express = require("express");
+const session = require("express-session");
 const db = require("./models");
+const passport = require("./config/passport");
 const app = express();
 const Handlebars = require("handlebars");
 const expressHandlebars = require("express-handlebars");
@@ -11,6 +13,11 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 app.engine(
   "handlebars",
