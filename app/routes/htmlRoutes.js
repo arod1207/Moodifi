@@ -1,4 +1,4 @@
-const isAuthenticated = require("../config/middleware/isAuthenticated");
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
   app.get("/login", (req, res) => {
@@ -8,4 +8,8 @@ module.exports = function (app) {
   app.get("/signup", (req, res) => {
     res.render("signup");
   });
+
+  app.get("/index", isAuthenticated, (req,res) => {
+    res.render("index")
+  } )
 };

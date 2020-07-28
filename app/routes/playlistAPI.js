@@ -1,8 +1,9 @@
 const db = require("../models");
+const isAuthenticated = require("../config/middleware/isAuthenticated");
 
 
 module.exports = function(app) {
-app.get("/playlist/moods/all", (req, res) => {
+app.get("/playlist/moods/all", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -18,7 +19,7 @@ app.get("/playlist/moods/all", (req, res) => {
     });
 });
 
-app.get("/playlist/moods/sad", (req, res) => {
+app.get("/playlist/moods/sad", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -34,7 +35,7 @@ app.get("/playlist/moods/sad", (req, res) => {
     });
 });
 
-app.get("/playlist/moods/happy", (req, res) => {
+app.get("/playlist/moods/happy", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -50,7 +51,7 @@ app.get("/playlist/moods/happy", (req, res) => {
     });
 });
 
-app.get("/playlist/moods/angry", (req, res) => {
+app.get("/playlist/moods/angry", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -66,7 +67,7 @@ app.get("/playlist/moods/angry", (req, res) => {
     });
 });
 
-app.get("/playlist/activities/all", (req, res) => {
+app.get("/playlist/activities/all", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
