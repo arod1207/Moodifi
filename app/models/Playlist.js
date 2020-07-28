@@ -12,13 +12,16 @@ module.exports = function (sequelize, DataTypes) {
       CATEGORY: {
         type: DataTypes.STRING,
       },
-      RATING: {
+      LIKED: {
+        type: DataTypes.INTEGER,
+      },
+      DISLIKED: {
         type: DataTypes.INTEGER,
       },
       IMAGE: {
         type: DataTypes.STRING,
-        allowNull: "false"
-      }
+        allowNull: "false",
+      },
     },
     {
       freezeTableName: true, // Model tableName will be the same as the model name

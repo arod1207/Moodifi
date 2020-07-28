@@ -74,3 +74,27 @@
     display: block;
 }
 
+img {
+    width: 20rem;
+    height:18rem;
+    align-content: center;
+    }
+
+img:hover {
+   background-color: inherit;
+    
+}
+
+li {
+    display: inline-block;
+    margin-left: 8rem;
+    padding-top: 3rem;
+
+}
+
+.licard-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: rgba(190, 190, 190, 0.753);
+}
