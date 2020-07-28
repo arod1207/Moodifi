@@ -47,3 +47,51 @@ VALUES
 , current_date
 ());
 
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Chill','https://open.spotify.com/playlist/37i9dQZF1DX2UgsUIg75Vg?si=EEt3WEkrRoKkiwz5j1cFkg','Moods', 0,0, 'https://i.scdn.co/image/ab67706f000000032b29b4a26e620ccd2bd2d2f8', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Bold','https://open.spotify.com/playlist/37i9dQZF1DWSlw12ofHcMM?si=RYnofjXlRTi4Xl4jeRfoLA','Moods', 0,0, 'https://i.scdn.co/image/ab67706f000000035fa2770f7418d878a008ca49', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Sad','https://open.spotify.com/playlist/37i9dQZF1DWVV27DiNWxkR?si=M7yE9mXKSlOT-gdSx0hq1Q','Moods', 0,0, 'https://i.scdn.co/image/ab67706f00000003266adcded1f7792749680824', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Happy','https://open.spotify.com/playlist/37i9dQZF1DWVu0D7Y8cYcs?si=nbzcvD61T-SDOt_q_NiF4g','Moods', 0,0, 'https://i.scdn.co/image/ab67706f00000003fe236d32d2e2fb9d3cb6de40', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Not Sure','https://open.spotify.com/playlist/37i9dQZF1DX59NCqCqJtoH?si=IUeAVn6ESY-AR5EudhJUzw','Moods', 0,0, 'https://i.scdn.co/image/ab67706f000000035f6755807c73eb5f0effb5f0', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Cooking','https://open.spotify.com/playlist/37i9dQZF1DX2FsCLsHeMrM?si=lzEl8vNrR_-rOf2Zw9oVTA','Activities', 0,0, 'https://i.scdn.co/image/ab67706f00000003d5ce097e3b611f9cf4634923', current_date()
+, current_date
+());
+
+INSERT INTO playlist
+    (NAME, LINK, CATEGORY, LIKED, DISLIKED, IMAGE, createdAt, updatedAt)
+VALUES
+    ('Dance','https://open.spotify.com/playlist/37i9dQZF1DWZQaaqNMbbXa?si=IWqYG7GqRpm7_8iHc4Hk7g','Activities', 0,0, 'https://i.scdn.co/image/ab67706f00000003781ac43d0cb6f4b9022f8044', current_date()
+, current_date
+());

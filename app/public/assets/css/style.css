@@ -47,7 +47,7 @@
    cursor: grab;
  }
 
-.card:hover {
+ .card:hover {
     border: 3px solid #ff7a59;
 }
 
@@ -80,11 +80,6 @@ img {
     align-content: center;
     }
 
-img:hover {
-   background-color: inherit;
-    
-}
-
 li {
     display: inline-block;
     margin-left: 8rem;
@@ -102,3 +97,8 @@ li {
 .rateBtn {
     display: inline-block;
 }
+
+#homeBtn {
+    margin-bottom: 3rem;;
+}
+

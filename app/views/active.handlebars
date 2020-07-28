@@ -9,7 +9,7 @@
         </a>
         <h5 class="licard-title">{{this.NAME}}</h5>
         <!-- like button -->
-        <form action="/playlist/activities/like/{{this.id}}" class= "rateBtn" method="POST">
+        <form action="/playlist/activities/like/{{this.id}}" class="rateBtn" method="POST">
           <input type="hidden" name="rating">
           <button class="btn" type="submit">
             <h2><i class="fa fa-thumbs-o-up"> {{this.LIKED}}</i></h2>
@@ -25,6 +25,11 @@
       </li>
       {{/each}}
     </ul>
+    </a>
+  </div>
+  <div class="row">
+    <a href="http://localhost:3000/" style="margin:auto;">
+      <button id="homeBtn" type="button" class="btn btn-outline-light">Go Back Home</button>
     </a>
   </div>
 </div>
