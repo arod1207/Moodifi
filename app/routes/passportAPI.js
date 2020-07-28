@@ -22,4 +22,9 @@ module.exports = function (app) {
       res.render("login");
     });
   });
+
+  app.delete("/logout", (req,res) => {
+    req.logout();
+    res.redirect("/login")
+  })
 };

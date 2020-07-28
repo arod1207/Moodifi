@@ -6,6 +6,7 @@ const passport = require("./config/passport");
 const app = express();
 const Handlebars = require("handlebars");
 const expressHandlebars = require("express-handlebars");
+const methodOverride = require('method-override');
 const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
@@ -19,7 +20,7 @@ app.use(flash())
 app.use(session({ secret: "Air condition", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
-
+app.use(methodOverride('_method'));
 
 app.engine(
   "handlebars",
