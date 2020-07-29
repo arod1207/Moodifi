@@ -1,8 +1,9 @@
-const express = require("express");
-const router = express.Router();
 const db = require("../models");
+const isAuthenticated = require("../config/middleware/isAuthenticated");
 
-router.get("/playlist/moods/all", (req, res) => {
+
+module.exports = function(app) {
+app.get("/playlist/moods/all", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -18,7 +19,7 @@ router.get("/playlist/moods/all", (req, res) => {
     });
 });
 
-router.get("/playlist/moods/sad", (req, res) => {
+app.get("/playlist/moods/sad", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -34,7 +35,7 @@ router.get("/playlist/moods/sad", (req, res) => {
     });
 });
 
-router.get("/playlist/moods/happy", (req, res) => {
+app.get("/playlist/moods/happy", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -50,7 +51,7 @@ router.get("/playlist/moods/happy", (req, res) => {
     });
 });
 
-router.get("/playlist/moods/angry", (req, res) => {
+app.get("/playlist/moods/angry", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -66,7 +67,7 @@ router.get("/playlist/moods/angry", (req, res) => {
     });
 });
 
-router.get("/playlist/activities/all", (req, res) => {
+app.get("/playlist/activities/all", isAuthenticated, (req, res) => {
   db.playlist
     .findAll({
       raw: true,
@@ -82,7 +83,7 @@ router.get("/playlist/activities/all", (req, res) => {
     });
 });
 
-router.post("/playlist/activities/like/:id", (req, res) => {
+app.post("/playlist/activities/like/:id", (req, res) => {
   db.playlist
     .increment("Liked", {
       where: { id: req.params.id },
@@ -92,7 +93,7 @@ router.post("/playlist/activities/like/:id", (req, res) => {
     });
 });
 
-router.post("/playlist/activities/dislike/:id", (req, res) => {
+app.post("/playlist/activities/dislike/:id", (req, res) => {
   db.playlist
     .decrement("Disliked", {
       where: { id: req.params.id },
@@ -102,7 +103,7 @@ router.post("/playlist/activities/dislike/:id", (req, res) => {
     });
 });
 
-router.post("/playlist/moods/like/:id", (req, res) => {
+app.post("/playlist/moods/like/:id", (req, res) => {
   db.playlist
     .increment("Liked", {
       where: { id: req.params.id },
@@ -112,7 +113,7 @@ router.post("/playlist/moods/like/:id", (req, res) => {
     });
 });
 
-router.post("/playlist/moods/dislike/:id", (req, res) => {
+app.post("/playlist/moods/dislike/:id", (req, res) => {
   db.playlist
     .decrement("Disliked", {
       where: { id: req.params.id },
@@ -122,4 +123,4 @@ router.post("/playlist/moods/dislike/:id", (req, res) => {
     });
 });
 
-module.exports = router;
+};

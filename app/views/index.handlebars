@@ -1,6 +1,13 @@
+<!-- Log Out Button-->
+<form action="/logout?_method=DELETE" method="POST">
+  <button type="submit" id="logOutBtn" class="btn btn-outline-light">Log Out</button>
+</form>
 <div class="container">
   <div class="show" id="homeScreen">
-        <h1>moodifi</h1>
+    <h1 id="indexHeader">moodifi</h1>
+    <!-- Greeting the user -->
+    <p id="greet">Hello, {{user.USERNAME}}.</p>
+    <!-- About tagline -->
     <p id="about">
       Curated playlists for whatever you do, and your moods.
     </p>
@@ -31,4 +38,13 @@
       </a>
     </div>
   </div>
+  <!-- Possibly use later!! -->
+  <!-- <form>
+    <input type="text" placeholder="Insert Link" id="url">
+    <button class="btn btn-danger submitBtn" type="submit">Mood Me</button>
+  </form> 
+  <form action="/logout?_method=DELETE" method="POST">
+    <button class="btn btn-danger submitBtn" href="http://localhost:3000/" type="submit">Mood Me</button>
+   </form> 
+  -->
 </div>
