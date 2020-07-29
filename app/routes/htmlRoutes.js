@@ -10,6 +10,8 @@ module.exports = function (app) {
   });
 
   app.get("/index", isAuthenticated, (req,res) => {
-    res.render("index")
+    res.render("index", {
+      user: req.user
+    })
   } )
 };

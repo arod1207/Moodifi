@@ -42,7 +42,7 @@ require("./routes/passportAPI")(app)
 
 
 app.use("/", (req, res) => {
-  res.render("login", { username: "mando"});
+  res.render("login");
 });
 
 db.sequelize.sync().then(() => {
