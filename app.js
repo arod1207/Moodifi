@@ -19,7 +19,9 @@ app.use(flash());
 
 require("dotenv").config();
 
-app.use(session({ SECRET_SESSION, resave: false, saveUninitialized: false }));
+app.use(
+  session({ secret: SECRET_SESSION, resave: false, saveUninitialized: false })
+);
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride("_method"));
