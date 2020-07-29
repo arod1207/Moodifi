@@ -21,7 +21,7 @@ require("dotenv").config();
 
 app.use(
   session({
-    secret: process.env.SECRET_SESSION,
+    secret: "SECRET_SESSION",
     resave: false,
     saveUninitialized: false,
   })
