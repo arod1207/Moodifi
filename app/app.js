@@ -1,4 +1,3 @@
-const connection = require("./config/connection")
 const express = require("express");
 const session = require("express-session");
 const flash = require("express-flash")
