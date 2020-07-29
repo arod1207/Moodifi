@@ -5,7 +5,7 @@
         <p><h2>Hello {{user.USERNAME}}</h2></p>
     
     <p id="about">
-      Curated playlists for whatever you do, or your mood.
+      Curated playlists for whatever you do, and your moods.
     </p>
     <div class="row">
       <!-- moods card -->
@@ -37,9 +37,13 @@
   {{!-- Possibly use later!! --}}
   {{!-- <form>
     <input type="text" placeholder="Insert Link" id="url">
+
     <button class="btn btn-danger submitBtn" type="submit">Mood Me</button>
   </form> --}}
   <form action="/logout?_method=DELETE" method="POST">
     <button type="submit">Log Out</button>
+
+    <button class="btn btn-danger submitBtn" href="http://localhost:3000/" type="submit">Mood Me</button>
+
   </form>
 </div>
