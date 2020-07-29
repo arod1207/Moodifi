@@ -1,8 +1,8 @@
 const express = require("express");
 const session = require("express-session");
 const flash = require("express-flash")
-const db = require("./models");
-const passport = require("./config/passport");
+const db = require("./app/models");
+const passport = require("./app/config/passport");
 const app = express();
 const Handlebars = require("handlebars");
 const expressHandlebars = require("express-handlebars");
@@ -36,9 +36,9 @@ app.set("view engine", "handlebars");
 
 app.use(express.static("public"));
 
-require("./routes/playlistAPI")(app);
-require("./routes/htmlRoutes")(app);
-require("./routes/passportAPI")(app)
+require("./app/routes/playlistAPI")(app);
+require("./app/routes/htmlRoutes")(app);
+require("./app/routes/passportAPI")(app)
 
 
 app.use("/", (req, res) => {
