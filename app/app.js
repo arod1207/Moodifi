@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(flash())
 
 require('dotenv').config();
-console.log(process.env)
+// console.log(process.env)
 
 app.use(session({ secret: process.env.SUPER_SECRET, resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
