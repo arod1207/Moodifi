@@ -7,7 +7,7 @@ const {
   allowInsecurePrototypeAccess,
 } = require("@handlebars/allow-prototype-access");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3060;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
