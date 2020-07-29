@@ -21,7 +21,7 @@ require("dotenv").config();
 
 app.use(
   session({
-    secret: "SECRET_SESSION",
+    secret: "keyboard cat",
     resave: false,
     saveUninitialized: false,
   })
