@@ -20,6 +20,8 @@ module.exports = function (app) {
     }).then((data) => {
       console.log(data);
       res.render("login");
+    }).catch(function(err) {
+      res.status(401).json(err);
     });
   });
 

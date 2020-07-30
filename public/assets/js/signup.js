@@ -1,35 +1,32 @@
-// $(document).ready(function() {
+$(document).ready(function() {
+  const username = $('#username').val();
+  const password = $("#password").val();
+  
 
-// // let signup = $("#signup");
-// let username = $("#username").val();
-// let password = $("#password").val();
+  $('#signUpBtn').on("submit", function(event) {
+    event.preventDefault();
+    var userData = {
+      username: username,
+      password: password
+    };
 
+    if (!userData.username || !userData.password) {
+      return;
+    }
 
-// $(".signupBtn").on('submit', (event) => {
-//   event.preventDefault();
-//   console.log('clicked')
-//   let userData = {
-//     USERNAME: username,
-//     PASSWORD: password
-//   };
-//   if (!userData.username || userData.password) {
-//     return;
-//   }
-//   signUpUser(userData.username, userData.password);
-//   username.val("");
-//   password.val("")
-// });
+    signUpUser(userData.username, userData.password);
+    username.val("");
+    password.val("");
+  });
 
+  function signUpUser(username, password) {
+    $.post("/signup", {
+      username: username,
+      password: password
+    })
+      .then(function(data) {
+        console.log('success')
+      })
+  }
 
-
-// function signUpUser(username, password) {
-//   $.post("/api/signup", {
-//     USERNAME: username,
-//     PASSWORD: password
-//   }).then((data) => {
-//     window.location("/playlist/moods/sad")
-//   })
-// }
-
-
-// });
+});
