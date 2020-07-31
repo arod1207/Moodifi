@@ -1,224 +1,239 @@
 * {
-    font-family: 'Montserrat', sans-serif;
- }
- 
- body {
-     background-color: rgb(17, 17, 17);
- 
- }
- #indexHeader {
-    text-align: center;
-    text-align: 50vw;
-    font-size: 11rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(17, 17, 17);
+}
+#indexHeader {
+  text-align: center;
+  text-align: 50vw;
+  font-size: 11rem;
+  color: rgba(190, 190, 190, 0.753);
+  padding-top: 5rem;
+
+  -webkit-animation: colorchange 2s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
     color: rgba(190, 190, 190, 0.753);
-    padding-top: 5rem;
+  }
 
-    -webkit-animation: colorchange 2s infinite alternate;
-     
-   }
+  100% {
+    color: coral;
+  }
+}
 
-   @-webkit-keyframes colorchange {
-     0% {
-       
-       color: rgba(190, 190, 190, 0.753);
-     }
-     
-     100% {
-       
-       color: coral;
-   }
-   }
- 
- h1 {
-     text-align: center;
-     text-align: 50vw;
-     font-size: 11rem;
-     color: rgba(190, 190, 190, 0.753);
-     padding-top: 6rem;
+h1 {
+  text-align: center;
+  text-align: 50vw;
+  font-size: 11rem;
+  color: rgba(190, 190, 190, 0.753);
+  padding-top: 6rem;
 
-     -webkit-animation: colorchange 2s infinite alternate;
-      
-    }
+  -webkit-animation: colorchange 2s infinite alternate;
+}
 
-    @-webkit-keyframes colorchange {
-      0% {
-        
-        color: rgba(190, 190, 190, 0.753);
-      }
-      
-      100% {
-        
-        color: coral;
-    }
-    }
- 
- #greet {
-     text-align: center;
-     font-size: 1rem;
- }
+@-webkit-keyframes colorchange {
+  0% {
+    color: rgba(190, 190, 190, 0.753);
+  }
+
+  100% {
+    color: coral;
+  }
+}
+
+#greet {
+  text-align: center;
+  font-size: 1rem;
+}
 
 #about {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: -15px;
-
+  text-align: center;
+  font-size: 1rem;
+  margin-top: -15px;
 }
 
- .card {
-   color: inherit;
-   text-align: center;
-   margin: 0 auto; 
-   float: none;
-   margin-bottom: 10px; 
-   padding-top: 2rem;
-   margin-left: 10rem;
-   cursor: grab;
- }
-
- .card:hover {
-    border: 3px solid #ff7a59;
-    color: inherit;
+.card {
+  color: inherit;
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+  padding-top: 2rem;
+  margin-left: 10rem;
+  cursor: grab;
 }
 
-
- .fa-smile-o {
-     font-size: 150px;
+.card:hover {
+  border: 3px solid #ff7a59;
+  color: inherit;
 }
 
+.fa-smile-o {
+  font-size: 150px;
+}
 
- .fa-angle-double-up {
-    font-size: 150px;
-    color: coral;
+.fa-angle-double-up {
+  font-size: 150px;
+  color: coral;
 }
 
 .animate__animated.animate__fadeIn {
-    --animate-duration: 4s;
-  }
+  --animate-duration: 4s;
+}
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 img {
-    width: 20rem;
-    height:18rem;
-    align-content: center;
-    }
+  width: 20rem;
+  height: 18rem;
+  align-content: center;
+}
 img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 li {
-    display: inline-block;
-    margin-left: 8rem;
-    padding-top: 3rem;
-
+  display: inline-block;
+  margin-left: 8rem;
+  padding-top: 3rem;
 }
 
 .licard-title {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    text-align: center;
-    color: rgba(122, 122, 122, 0.753);
-  
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgba(122, 122, 122, 0.753);
 }
 
 .rateBtn {
-    display: inline-block;
+  display: inline-block;
 }
 
 #homeBtn {
-    margin-bottom: 3rem;;
+  margin-bottom: 3rem;
 }
 
 .fa-thumbs-o-down {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .fa-thumbs-o-up {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .loginForm {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 .signUpForm {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 #logIn {
-    margin: auto;
-    margin-top: 10px;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
+  margin: auto;
+  margin-top: 10px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
 }
 
 #sLogIn {
-    margin: auto;
-    margin-top: 10px;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
+  margin: auto;
+  margin-top: 10px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
 }
 
 label {
-    color: rgba(190, 190, 190, 0.753);
+  color: rgba(190, 190, 190, 0.753);
 }
 
 .signUpBtn {
-    margin: auto;
-    text-align: center;
-    margin-top: 1rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 #signUpBtn {
-    margin: auto;
-    text-align: center;
-    margin-top: 5px;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
+  margin: auto;
+  text-align: center;
+  margin-top: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
 }
 
 #logOutBtn {
-    margin-left: 1rem;
-    margin-top: 5px;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom: transparent;
-    color: rgba(122, 122, 122, 0.753);
+  margin-left: 1rem;
+  margin-top: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  color: rgba(122, 122, 122, 0.753);
 }
 
+#logOutBtn2 {
+  margin-left: 2rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  color: rgba(122, 122, 122, 0.753);
+}
 
-input[type="text"]
-{
-    background: transparent;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    color: rgba(190, 190, 190, 0.753);
+#beta {
+  margin-left: 1rem;
+  margin-top: 5px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  color: rgba(122, 122, 122, 0.753);
+}
+
+input[type="password"] {
+  background: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: rgba(190, 190, 190, 0.753);
+}
+
+input[type="text"] {
+  background: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  color: rgba(190, 190, 190, 0.753);
 }
 
 #signUpPrompt {
-    text-align: center;
-    margin: auto;
-    margin-top: 2rem;
-    color: rgba(190, 190, 190, 0.753);
+  text-align: center;
+  margin: auto;
+  margin-top: 2rem;
+  color: rgba(190, 190, 190, 0.753);
 }
 
-.selectpicker{
-    background-color: transparent;
-    color: rgba(190, 190, 190, 0.753);
-    }
+.selectpicker {
+  background-color: transparent;
+  color: rgba(190, 190, 190, 0.753);
+}

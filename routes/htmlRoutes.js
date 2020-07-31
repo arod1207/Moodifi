@@ -9,9 +9,12 @@ module.exports = function (app) {
     res.render("signup");
   });
 
-  app.get("/index", isAuthenticated, (req,res) => {
+  app.get("/index", isAuthenticated, (req, res) => {
     res.render("index", {
-      user: req.user
-    })
-  } )
+      user: req.user,
+    });
+  });
+  app.get("/beta", isAuthenticated, (req, res) => {
+    res.render("beta");
+  });
 };

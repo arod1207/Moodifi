@@ -18,7 +18,7 @@ passport.use(
         console.log(dbUser);
         if (dbUser === null) {
           return done(null, false, {
-            message: "Incorrect Username.",
+            message: "Incorrect Username",
           });
         } else if (await bcrypt.compare(password, dbUser.PASSWORD)) {
           return done(null, dbUser);

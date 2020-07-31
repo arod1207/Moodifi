@@ -1,3 +1,42 @@
 # Moodifi
+Curated playlist for whatever you do, and your moods. Discovery new music based on your activities and feelings! Browse, rate and listen all within one app!
 
-##  Moodifi is an application that selects music based on your current mood. 
+## Deployed App
+Heroku App: https://shrouded-chamber-97830.herokuapp.com/
+
+ ## Usage
+ How to use:
+  - Click on the heroku link
+  - If user is returning, log in!
+  - If user is new, sign up! 
+  - Pick a playlist by your mood or activity!
+  - Discover new music!
+  
+ ## Technologies Used: ![GitHub last commit](https://img.shields.io/github/languages/top/arod1207/Moodifi)
+- HTML
+- CSS
+- Animate.CSS
+- JavaScript
+- Node.JS
+- MySQL
+- Nodemon
+- Heroku
+- JawsDB
+- Express
+	 - Flash
+	 - Handlebars
+	 - Session
+- Passport
+	 - Passport-local
+- Sequelize
+	 - Sequelize-cli
+      
+## Contributors
+ - Armando Rodriguez
+ - Jaylan Wienckowski
+  
+## Questions   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
+  
+  For any queations, reach us at:
+  - arod1207@me.com
+  - jaylanwienckowski@gmail.com

@@ -20,6 +20,10 @@ module.exports = function (app) {
     }).then((data) => {
       console.log(data);
       res.render("login");
+    }).catch(function(err) {
+      res.render('signup', {
+        err: 'Username is already in use...'
+      });
     });
   });
 
