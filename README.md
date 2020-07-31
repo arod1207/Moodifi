@@ -10,7 +10,7 @@ Heroku App: https://shrouded-chamber-97830.herokuapp.com/
   - If user is returning, log in!
   - If user is new, sign up! 
   - Pick a playlist by your mood or activity!
-  - Dsciover new music!
+  - Discover new music!
   
  ## Technologies Used: ![GitHub last commit](https://img.shields.io/github/languages/top/arod1207/Moodifi)
 - HTML
@@ -21,7 +21,7 @@ Heroku App: https://shrouded-chamber-97830.herokuapp.com/
 - MySQL
 - Nodemon
 - Heroku
-- JawsDB*
+- JawsDB
 - Express
 	 - Flash
 	 - Handlebars
