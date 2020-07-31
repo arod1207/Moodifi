@@ -1,6 +1,3 @@
-
-var url = $("#url").val();
-
 function setup() {
   $(".turnOnBtn").click(function (e) {
     e.preventDefault();
@@ -23,7 +20,7 @@ function setup() {
         method: "POST",
         data: {
           api_key: process.env.API_KEY,
-          api_secret: process.env.API_SECRET,
+          api_secret: "6bQwRGbsaITtTpesTh6pH_ftFKsJJNT2",
           image_base64: `${image64}`,
           return_attributes: "emotion",
         },
@@ -32,12 +29,11 @@ function setup() {
         let anger = data.faces[0].attributes.emotion.anger;
         let happiness = data.faces[0].attributes.emotion.happiness;
         let neutral = data.faces[0].attributes.emotion.neutral;
-        let sadness = data.faces[0].attributes.emotion.sadness
 
-        if (anger > 40) {
+        if (anger > 50) {
           window.location = "/playlist/moods/angry";
-        } else if (neutral > 70) {
-          window.location = "/playlist/moods/neutral";
+        } else if (neutral > 50) {
+          window.location = "/playlist/moods/sad";
         } else if (happiness < 50) {
           window.location = "/playlist/moods/sad";
         } else {

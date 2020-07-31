@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(flash());
 
-require("dotenv").config();
+require('dotenv').config()
 
 
 app.use(
