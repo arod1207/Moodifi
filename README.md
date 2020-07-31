@@ -12,7 +12,7 @@ Heroku App: https://shrouded-chamber-97830.herokuapp.com/
   - Pick a playlist by your mood or activity!
   - Dsciover new music!
   
- ## Technologies Used: (https://img.shields.io/github/languages/top/arod1207/Moodifi) ![GitHub last commit]
+ ## Technologies Used: ![GitHub last commit](https://img.shields.io/github/languages/top/arod1207/Moodifi)
 - HTML
 - CSS
 - Animate.CSS
