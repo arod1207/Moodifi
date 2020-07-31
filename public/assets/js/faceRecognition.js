@@ -1,5 +1,3 @@
-var url = $("#url").val();
-
 function setup() {
   $(".turnOnBtn").click(function (e) {
     e.preventDefault();
@@ -21,7 +19,7 @@ function setup() {
         url: api_url,
         method: "POST",
         data: {
-          api_key: "mp3ITqttnJPUUI45s1ugOfJgDEc4JmH0",
+          api_key: 'mp3ITqttnJPUUI45s1ugOfJgDEc4JmH0',
           api_secret: "6bQwRGbsaITtTpesTh6pH_ftFKsJJNT2",
           image_base64: `${image64}`,
           return_attributes: "emotion",
@@ -34,9 +32,9 @@ function setup() {
 
         if (anger > 50) {
           window.location = "/playlist/moods/angry";
-        } else if (neutral > 50) {
-          window.location = "/playlist/moods/sad";
-        } else if (happiness < 50) {
+        } else if (neutral > 70) {
+          window.location = "/playlist/moods/neutral";
+        } else if (happiness < 40) {
           window.location = "/playlist/moods/sad";
         } else {
           window.location = "/playlist/moods/happy";
