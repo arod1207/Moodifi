@@ -32,7 +32,7 @@ Heroku App: https://shrouded-chamber-97830.herokuapp.com/
 	 - Sequelize-cli
       
 ## Contributors
- - Armando rodrigruez
+ - Armando Rodriguez
  - Jaylan Wienckowski
   
 ## Questions   [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
