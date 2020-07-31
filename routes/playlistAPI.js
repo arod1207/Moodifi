@@ -40,7 +40,7 @@ app.get("/playlist/moods/happy", isAuthenticated, (req, res) => {
     .findAll({
       raw: true,
       where: {
-        NAME: "Happy",
+        NAME: ['Happy', 'Bold','Dance']
       },
     })
     .then((playlist) => {
@@ -57,6 +57,22 @@ app.get("/playlist/moods/angry", isAuthenticated, (req, res) => {
       raw: true,
       where: {
         NAME: "Angry",
+      },
+    })
+    .then((playlist) => {
+      console.log(playlist);
+      res.render("moods", {
+        playlist,
+      });
+    });
+});
+
+app.get("/playlist/moods/neutral", isAuthenticated, (req, res) => {
+  db.playlist
+    .findAll({
+      raw: true,
+      where: {
+        NAME: ["Chill", "Not Sure"],
       },
     })
     .then((playlist) => {
