@@ -5,6 +5,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
+      unique: {
+        args: true,
+        msg: 'Username already in use'
+    }
     },
     // The password cannot be null
     PASSWORD: {
