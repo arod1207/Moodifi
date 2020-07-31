@@ -1,3 +1,4 @@
+
 var url = $("#url").val();
 
 function setup() {
@@ -21,8 +22,8 @@ function setup() {
         url: api_url,
         method: "POST",
         data: {
-          api_key: "mp3ITqttnJPUUI45s1ugOfJgDEc4JmH0",
-          api_secret: "6bQwRGbsaITtTpesTh6pH_ftFKsJJNT2",
+          api_key: process.env.API_KEY,
+          api_secret: process.env.API_SECRET,
           image_base64: `${image64}`,
           return_attributes: "emotion",
         },
