@@ -8,11 +8,7 @@ module.exports = function (sequelize, DataTypes) {
     PASSWORD: {
       type: DataTypes.STRING,
       allowNull: false,
-    },
-    IMAGE: {
-      type: DataTypes.STRING,
-      unique: true,
-    },
+    }
   });
   return User;
 };
