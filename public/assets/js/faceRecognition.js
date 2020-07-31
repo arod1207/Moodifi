@@ -1,4 +1,4 @@
-// possibly use later //
+var url = $("#url").val();
 
 function setup() {
   $(".turnOnBtn").click(function (e) {
