@@ -189,8 +189,19 @@ label {
   color: rgba(122, 122, 122, 0.753);
 }
 
+#logOutBtn2 {
+  margin-left: 2rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: transparent;
+  color: rgba(122, 122, 122, 0.753);
+}
+
 #beta {
-  margin-right: 1rem;
+  margin-left: 1rem;
   margin-top: 5px;
   border-top: transparent;
   border-left: transparent;
