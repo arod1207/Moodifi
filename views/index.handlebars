@@ -2,6 +2,9 @@
 <form action="/logout?_method=DELETE" method="POST">
   <button type="submit" id="logOutBtn" class="btn btn-outline-light">Log Out</button>
 </form>
+<a href="/beta" class="signUpBtn">
+            <button id="beta" type="button" class="btn btn-outline-light">Beta</button>
+        </a>
 <div class="container">
   <div class="show" id="homeScreen">
     <h1 id="indexHeader">moodifi</h1>
@@ -38,20 +41,3 @@
       </a>
     </div>
   </div>
-  <!-- Possibly use later!! -->
-  <!-- <form>
-    <input type="text" placeholder="Insert Link" id="url">
-    <button class="btn btn-danger submitBtn" type="submit">Mood Me</button>
-  </form> 
-  <form action="/logout?_method=DELETE" method="POST">
-
-    <button class="btn btn-danger submitBtn" href="http://localhost:3000/" type="submit">Mood Me</button>
-   </form> 
-   
-    <button type="submit">Log Out</button>
-
-    {{!-- <button class="btn btn-danger submitBtn" href="http://localhost:3000/" type="submit">Mood Me</button> --}}
-
-  </form>
-
-</div>
