@@ -32,8 +32,8 @@ function setup() {
 
         if (anger > 50) {
           window.location = "/playlist/moods/angry";
-       //  } else if (neutral > 70) {
-       //   window.location = "/playlist/moods/neutral";
+         } else if (neutral > 90) {
+          window.location = "/playlist/moods/neutral";
         } else if (happiness < 40) {
           window.location = "/playlist/moods/sad";
         } else {
